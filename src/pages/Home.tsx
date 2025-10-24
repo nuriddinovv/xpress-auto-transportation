@@ -1,0 +1,230 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import QuoteCalculator from "../components/quote-calculator";
+import StatsComponent from "../components/stats-component";
+import cobaltKey from "/cobaltKey.svg";
+import homeAboutSect from "/homeAboutSect.svg";
+import homeBg from "/homeBg.svg";
+import truckAndSafe from "/truckAndSafe.svg";
+import twoHand from "/twoHand.svg";
+import {
+  faTruckFast,
+  faFaceSmile,
+  faHashtag,
+  faStar,
+} from "@fortawesome/free-solid-svg-icons";
+import ServiceHighlightsCard from "../components/service-highlights-card";
+import CallBackForm from "../components/call-back-form";
+import Marquee from "react-fast-marquee";
+import { accordionData } from "../components/accordion/data";
+import { AccordionComponent } from "../components/accordion/Accordion";
+import UsaMap from "../components/usa-map";
+import BlogsCard from "../components/blogs-card";
+
+export default function Home() {
+  const stats = [
+    { icon: faTruckFast, title: "Cars transported", count: 1500 },
+    { icon: faFaceSmile, title: "Satisfied clients", count: 1200 },
+    { icon: faHashtag, title: "Carrier Network", count: 2500 },
+    { icon: faStar, title: "5 Star Reviews", count: 1000 },
+  ];
+  return (
+    <>
+      {/* section 1 */}
+      <div
+        style={{
+          backgroundImage: `linear-gradient(to bottom, rgba(22,21,23,1), rgba(22,21,23,0.74), rgba(22,21,23,0)), url(${homeBg})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          width: "100%",
+
+          minHeight: "800px",
+        }}
+      >
+        <div className="container py-[32px] md:py-[68px]">
+          <div className="gap-3 mb-8 md:px-12">
+            <p className="font-bold md:text-[2.5rem] text-[1.5rem] max-w-[685px] mx-auto text-center text-white">
+              Reliable Door-to-Door Auto Transport & Car Shipping Services
+            </p>
+            <p className="font-[500] md:text-lg text-wrap text-white/65 text-center">
+              <span className="text-main">Xpress Auto Transportation</span>:
+              Your reliable solution for secure and efficient vehicle shipping
+              nationwide. We offer hassle-free transportation services for cars,
+              motorcycles, and SUVs, ensuring timely delivery and peace of mind.
+              Contact us now to experience our top-quality service and
+              competitive pricing.
+            </p>
+          </div>
+
+          <div className="w-full p-4 rounded-[28px] backdrop-blur-[200px] bg-white/20 border-2 border-white/10 gap-6 flex">
+            <QuoteCalculator />
+          </div>
+        </div>
+      </div>
+      {/* section 2 */}
+      <div className="container mt-5 md:-mt-20 lg:-mt-60 z-10">
+        <div className="grid gap-2 md:gap-5 w-full grid-cols-12 auto-rows-[minmax(215px,auto)] grid-flow-dense">
+          <div
+            style={{
+              backgroundImage: `url(${homeAboutSect})`,
+              backgroundSize: "cover",
+              width: "100%",
+            }}
+            className="col-span-12 bg-right-top  lg:col-span-8 rounded-2xl py-5 px-6 min-h-[215px] grid md:grid-cols-2"
+          >
+            <div>
+              <p className="mb-2 font-bold text-white text-2xl">About Us</p>
+              <p className="text-sm text-white">
+                At Xpress Auto Transportation, we are dedicated to providing
+                exceptional vehicle shipping services tailored to your needs.
+                With years of experience, we’ve become a trusted name in the
+                transportation business.
+              </p>
+            </div>
+          </div>
+          <div
+            style={{
+              backgroundImage: `url(${truckAndSafe})`,
+              backgroundRepeat: "no-repeat",
+              width: "100%",
+            }}
+            className="col-span-12 lg:col-span-4 lg:row-span-2 bg-[#090F14] rounded-2xl py-5 px-6"
+          >
+            <p className="mb-2 font-bold text-white text-2xl">
+              Safe & Reliable Delivery
+            </p>
+            <p className="text-sm text-white">
+              Our skilled professionals ensure the safe and timely delivery of
+              your vehicles, treating each shipment with the utmost care
+            </p>
+          </div>
+          <div
+            style={{
+              backgroundImage: `url(${cobaltKey})`,
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "right",
+              height: "100%",
+            }}
+            className="col-span-12 sm:col-span-6 lg:col-span-4 rounded-2xl py-5 px-6 min-h-[215px] bg-[#090F14]"
+          >
+            <p className="mb-2 font-bold text-white text-2xl">
+              Hassle-Free Experience
+            </p>
+            <p className="text-sm text-white">
+              Choose Xpress Auto Transportation for a reliable and stress-free
+              shipping journey
+            </p>
+          </div>
+
+          <div
+            style={{
+              backgroundImage: `url(${twoHand})`,
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "right",
+              height: "100%",
+            }}
+            className="col-span-12 sm:col-span-6 lg:col-span-4 rounded-2xl py-5 px-6 min-h-[215px] bg-[#090F14]"
+          >
+            <p className="mb-2 font-bold text-white text-2xl">
+              Customer-Centric Service
+            </p>
+            <p className="text-sm text-white w-3/4">
+              We take pride in our transparent and customer-focused approach,
+              offering competitive pricing and open communication.
+            </p>
+          </div>
+        </div>
+      </div>
+      {/* section 3 */}
+      <div className="container col-span-12 py-4 md:py-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          {stats.map((item, i) => (
+            <StatsComponent
+              key={i}
+              count={item.count}
+              headerTitle={item.title}
+              headerIcon={
+                <FontAwesomeIcon className="text-second" icon={item.icon} />
+              } // <-- IconDefinition berildi
+            />
+          ))}
+        </div>
+      </div>
+      {/* section 4 */}
+      <div className="py-4 md:py-12">
+        <p className="text-center text-mainDark font-bold text-2xl md:text-4xl">
+          What Makes Us Stand Out?
+        </p>
+        <Marquee
+          speed={30}
+          pauseOnHover
+          gradient={true}
+          gradientWidth={50}
+          autoFill
+          className="mt-9"
+        >
+          <ServiceHighlightsCard />
+          <ServiceHighlightsCard />
+          <ServiceHighlightsCard />
+        </Marquee>
+        <Marquee
+          speed={30}
+          pauseOnHover
+          gradient={true}
+          gradientWidth={50}
+          direction="right"
+          className="mt-9"
+        >
+          <ServiceHighlightsCard />
+          <ServiceHighlightsCard />
+          <ServiceHighlightsCard />
+          <ServiceHighlightsCard />
+          <ServiceHighlightsCard />
+          <ServiceHighlightsCard />
+          <ServiceHighlightsCard />
+          <ServiceHighlightsCard />
+        </Marquee>
+      </div>
+
+      {/* MAP section */}
+      <div className="container py-4 md:py-12 md:min-h-fit">
+        <p className="text-center text-mainDark font-bold text-2xl md:text-4xl">
+          CHOOSE THE STATE
+        </p>
+        <p className="text-center text-base text-lightGray">Choose the state to see which services is available </p>
+        <UsaMap />
+      </div>
+      {/* CallBack form */}
+      <div className="container">
+        <CallBackForm />
+      </div>
+
+      {/* Blogs section */}
+      <div className=" container py-4 md:py-12">
+        <p className="text-center text-mainDark font-bold text-2xl md:text-4xl mb-5 md:mb-7">
+          BLOG POSTS
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+          {[1, 2, 3, 4].map((item) => <BlogsCard key={item} />)}
+        </div>
+      </div>
+
+      {/* Acordion section */}
+      <div className="py-4 md:py-12 container">
+        <h1 className="font-bold text-2xl md:text-4xl text-mainDark text-center">
+          FREQUENTLY ASKED QUESTIONS
+        </h1>
+        <div >
+          {
+            accordionData.map((item, i) => (
+              <div key={i} className="my-4">
+                <AccordionComponent value={item.value} description={item.description} />
+              </div>
+            ))
+          }
+        </div>
+      </div>
+      {/* asda */}
+
+    </>
+  );
+}
