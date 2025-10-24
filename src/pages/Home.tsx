@@ -191,19 +191,27 @@ export default function Home() {
         <p className="text-center text-mainDark font-bold text-2xl md:text-[32px]">
           CHOOSE THE STATE
         </p>
-        <p className="text-center text-base text-lightGray">Choose the state to see which services is available </p>
+        <p className="text-center text-base text-lightGray">
+          Choose the state to see which services is available{" "}
+        </p>
         <UsaMap />
       </div>
       <div className="container py-4 md:py-12">
-        <p className="font-bold text-2xl md:text-[32px] uppercase">Our Auto Transport Services</p>
-        <p className="text-base text-lightGray mb-8 mt-2 md:w-[80%]">At Xpress Auto Transportation, we offer a range of services tailored to meet your specific needs. Whether you need to
-          transport a family car, luxury vehicle, or an entire fleet, we provide reliable car shipping solutions that ensure your vehicle
-          arrives safely and on time.
+        <p className="font-bold text-2xl md:text-[32px] uppercase">
+          Our Auto Transport Services
+        </p>
+        <p className="text-base text-lightGray mb-8 mt-2 md:w-[80%]">
+          At Xpress Auto Transportation, we offer a range of services tailored
+          to meet your specific needs. Whether you need to transport a family
+          car, luxury vehicle, or an entire fleet, we provide reliable car
+          shipping solutions that ensure your vehicle arrives safely and on
+          time.
         </p>
         <div className=" flex flex-col gap-7">
-          {[1, 2, 3, 4].map((item) => <AutoTransportServices key={item} />)}
+          {[1, 2, 3, 4].map((item) => (
+            <AutoTransportServices key={item} />
+          ))}
         </div>
-
       </div>
       {/* CallBack form */}
       <div className="container ">
@@ -216,27 +224,22 @@ export default function Home() {
           BLOG POSTS
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
-          {[1, 2, 3, 4].map((item) => <BlogsCard key={item} />)}
+          {[1, 2, 3, 4].map((item) => (
+            <BlogsCard key={item} />
+          ))}
         </div>
       </div>
 
       {/* Acordion section */}
       <div className="py-4 md:py-12 container">
-        <h1 className="font-bold text-2xl md:text-[32px] text-mainDark text-center">
+        <h1 className="font-bold text-2xl mb-10 md:text-[32px] text-mainDark text-center">
           FREQUENTLY ASKED QUESTIONS
         </h1>
-        <div >
-          {
-            accordionData.map((item, i) => (
-              <div key={i} className="my-4">
-                <AccordionComponent value={item.value} description={item.description} />
-              </div>
-            ))
-          }
+        <div>
+          <AccordionComponent />
         </div>
       </div>
       {/* asda */}
-
     </>
   );
 }

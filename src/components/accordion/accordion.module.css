@@ -1,0 +1,66 @@
+.accordionRoot {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.item {
+  background-color: #f7fafc;
+  border-radius: 8px;
+  overflow: hidden;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.control {
+  padding: 0.9rem 1rem;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.label {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f2937;
+  text-align: center;
+  line-height: 1.4;
+  padding-right: 2rem;
+  max-width: 100%;
+}
+
+.panel {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #4b5563;
+  padding: 0 1rem 1rem 1rem;
+  text-align: center;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.chevron {
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 150ms ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chevron[data-rotate] {
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  stroke-width: 1.5;
+  color: #000000;
+}
