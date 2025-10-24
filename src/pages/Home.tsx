@@ -19,6 +19,7 @@ import { accordionData } from "../components/accordion/data";
 import { AccordionComponent } from "../components/accordion/Accordion";
 import UsaMap from "../components/usa-map";
 import BlogsCard from "../components/blogs-card";
+import AutoTransportServices from "../components/auto-transport-services";
 
 export default function Home() {
   const stats = [
@@ -151,7 +152,7 @@ export default function Home() {
       </div>
       {/* section 4 */}
       <div className="py-4 md:py-12">
-        <p className="text-center text-mainDark font-bold text-2xl md:text-4xl">
+        <p className="text-center text-mainDark font-bold text-2xl md:text-[32px]">
           What Makes Us Stand Out?
         </p>
         <Marquee
@@ -187,20 +188,31 @@ export default function Home() {
 
       {/* MAP section */}
       <div className="container py-4 md:py-12 md:min-h-fit">
-        <p className="text-center text-mainDark font-bold text-2xl md:text-4xl">
+        <p className="text-center text-mainDark font-bold text-2xl md:text-[32px]">
           CHOOSE THE STATE
         </p>
         <p className="text-center text-base text-lightGray">Choose the state to see which services is available </p>
         <UsaMap />
       </div>
+      <div className="container py-4 md:py-12">
+        <p className="font-bold text-2xl md:text-[32px] uppercase">Our Auto Transport Services</p>
+        <p className="text-base text-lightGray mb-8 mt-2 md:w-[80%]">At Xpress Auto Transportation, we offer a range of services tailored to meet your specific needs. Whether you need to
+          transport a family car, luxury vehicle, or an entire fleet, we provide reliable car shipping solutions that ensure your vehicle
+          arrives safely and on time.
+        </p>
+        <div className=" flex flex-col gap-7">
+          {[1, 2, 3, 4].map((item) => <AutoTransportServices key={item} />)}
+        </div>
+
+      </div>
       {/* CallBack form */}
-      <div className="container">
+      <div className="container ">
         <CallBackForm />
       </div>
 
       {/* Blogs section */}
       <div className=" container py-4 md:py-12">
-        <p className="text-center text-mainDark font-bold text-2xl md:text-4xl mb-5 md:mb-7">
+        <p className="text-center text-mainDark font-bold text-2xl md:text-[32px] mb-5 md:mb-7">
           BLOG POSTS
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
@@ -210,7 +222,7 @@ export default function Home() {
 
       {/* Acordion section */}
       <div className="py-4 md:py-12 container">
-        <h1 className="font-bold text-2xl md:text-4xl text-mainDark text-center">
+        <h1 className="font-bold text-2xl md:text-[32px] text-mainDark text-center">
           FREQUENTLY ASKED QUESTIONS
         </h1>
         <div >
