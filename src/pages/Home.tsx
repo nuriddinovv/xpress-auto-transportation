@@ -6,6 +6,10 @@ import homeAboutSect from "/homeAboutSect.svg";
 import homeBg from "/homeBg.svg";
 import truckAndSafe from "/truckAndSafe.svg";
 import twoHand from "/twoHand.svg";
+import centraldispatch from "/centraldispatch.svg";
+import dialpad from "/dialpad.svg";
+import fmcsa from "/fmcsa.svg";
+import transportreviews from "/transportreviews.svg";
 import {
   faTruckFast,
   faFaceSmile,
@@ -15,7 +19,6 @@ import {
 import ServiceHighlightsCard from "../components/service-highlights-card";
 import CallBackForm from "../components/call-back-form";
 import Marquee from "react-fast-marquee";
-import { accordionData } from "../components/accordion/data";
 import { AccordionComponent } from "../components/accordion/Accordion";
 import UsaMap from "../components/usa-map";
 import BlogsCard from "../components/blogs-card";
@@ -27,6 +30,13 @@ export default function Home() {
     { icon: faFaceSmile, title: "Satisfied clients", count: 1200 },
     { icon: faHashtag, title: "Carrier Network", count: 2500 },
     { icon: faStar, title: "5 Star Reviews", count: 1000 },
+  ];
+
+  const partners = [
+    { id: 1, src: transportreviews, alt: "Transport Reviews" },
+    { id: 2, src: fmcsa, alt: "FMCSA" },
+    { id: 3, src: centraldispatch, alt: "Central Dispatch" },
+    { id: 4, src: dialpad, alt: "Dialpad" },
   ];
   return (
     <>
@@ -214,8 +224,29 @@ export default function Home() {
         </div>
       </div>
       {/* CallBack form */}
-      <div className="container ">
+      <div className="container">
         <CallBackForm />
+      </div>
+      {/* Partners section */}
+      <div className="container mx-auto px-4">
+        <h1 className="text-2xl mt-4 font-bold">Partners</h1>
+
+        <div className="mt-6 flex flex-wrap -mx-4">
+          {partners.map((partner) => (
+            <div
+              key={partner.id}
+              className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4 mb-6"
+            >
+              <div className="w-full h-full [box-shadow:0_8px_19px_rgba(23,23,37,0.07)]bg-white border border-[#F1F1F5] rounded-xl p-10 flex items-center justify-center">
+                <img
+                  src={partner.src}
+                  alt={partner.alt}
+                  className="max-h-12 object-contain"
+                />
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
 
       {/* Blogs section */}
@@ -230,7 +261,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Acordion section */}
+      {/* Accordion section */}
       <div className="py-4 md:py-12 container">
         <h1 className="font-bold text-2xl mb-10 md:text-[32px] text-mainDark text-center">
           FREQUENTLY ASKED QUESTIONS
@@ -239,7 +270,6 @@ export default function Home() {
           <AccordionComponent />
         </div>
       </div>
-      {/* asda */}
     </>
   );
 }
