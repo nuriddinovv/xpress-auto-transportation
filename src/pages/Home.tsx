@@ -229,15 +229,15 @@ export default function Home() {
       </div>
       {/* Partners section */}
       <div className="container mx-auto px-4">
-        <h1 className="text-2xl mt-4 font-bold">Partners</h1>
+        <h1 className="text-2xl md:text-[32px] mt-4 font-bold text-center">Partners</h1>
 
-        <div className="mt-6 flex flex-wrap -mx-4">
+        <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 ">
           {partners.map((partner) => (
             <div
               key={partner.id}
-              className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4 mb-6"
+              className="w-full px-4 mb-6"
             >
-              <div className="w-full h-full [box-shadow:0_8px_19px_rgba(23,23,37,0.07)]bg-white border border-[#F1F1F5] rounded-xl p-10 flex items-center justify-center">
+              <div className="w-full h-full transition-all duration-300 bg-white border border-[#F1F1F5] hover:shadow-lg rounded-xl p-10 flex items-center justify-center">
                 <img
                   src={partner.src}
                   alt={partner.alt}
