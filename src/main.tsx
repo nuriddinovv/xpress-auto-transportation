@@ -13,7 +13,6 @@ const app = (
       <MantineProvider>
         <App />
       </MantineProvider>
-      ;
     </BrowserRouter>
   </HelmetProvider>
 );
