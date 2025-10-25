@@ -9,21 +9,18 @@ import Contacts from "./pages/Contacts";
 
 function App() {
   return (
-    <>
-      <Routes>
-        {/* Layout bilan nested routes */}
-        <Route element={<MainLayout />}>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/blog/:id" element={<BlogID />} />
-          <Route path="/contacts" element={<Contacts />} />
-        </Route>
+    <Routes>
+      <Route element={<MainLayout />}>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:id" element={<BlogID />} />
+        <Route path="/contacts" element={<Contacts />} />
+      </Route>
 
-        {/* 404 */}
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-    </>
+      {/* 404 */}
+      <Route path="*" element={<NotFound />} />
+    </Routes>
   );
 }
 
