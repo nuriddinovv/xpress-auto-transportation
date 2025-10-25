@@ -1,5 +1,4 @@
-import React from "react";
-import ReactDOM, { hydrateRoot, createRoot } from "react-dom/client";
+import { hydrateRoot, createRoot } from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import App from "./App";

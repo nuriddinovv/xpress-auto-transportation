@@ -2,9 +2,9 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { NavLink } from "react-router-dom";
 
-export default function BlogsCard({ img, title, date, id }: { img?: string, title?: string, date?: string, id?: number }) {
+export default function BlogsCard() {
      return (
-          <NavLink to={`/blog/${id ? id : ''}`} className="group w-full min-h-[345px] rounded-xl overflow-hidden hover:shadow-lg transition-shadow duration-300 bg-white">
+          <NavLink to={`/blog/1`} className="group w-full min-h-[345px] rounded-xl overflow-hidden hover:shadow-lg transition-shadow duration-300 bg-white">
                <img src="/truckAndSafe.svg" alt="truck" className="w-full rounded-xl" />
                <div className="p-4">
                     <p className="my-3 md:mt-5">May 15 2023</p>
