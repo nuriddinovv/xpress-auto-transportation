@@ -23,6 +23,7 @@ import { AccordionComponent } from "../components/accordion/Accordion";
 import UsaMap from "../components/usa-map";
 import BlogsCard from "../components/blogs-card";
 import AutoTransportServices from "../components/auto-transport-services";
+import { ReviewCard } from "../components/review-card";
 
 export default function Home() {
   const stats = [
@@ -229,14 +230,13 @@ export default function Home() {
       </div>
       {/* Partners section */}
       <div className="container mx-auto px-4">
-        <h1 className="text-2xl md:text-[32px] mt-4 font-bold text-center">Partners</h1>
+        <h1 className="text-2xl md:text-[32px] mt-4 font-bold text-center">
+          Partners
+        </h1>
 
         <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 ">
           {partners.map((partner) => (
-            <div
-              key={partner.id}
-              className="w-full px-4 mb-6"
-            >
+            <div key={partner.id} className="w-full px-4 mb-6">
               <div className="w-full h-full transition-all duration-300 bg-white border border-[#F1F1F5] hover:shadow-lg rounded-xl p-10 flex items-center justify-center">
                 <img
                   src={partner.src}
@@ -246,6 +246,21 @@ export default function Home() {
               </div>
             </div>
           ))}
+        </div>
+      </div>
+      {/* customer review */}
+      <div>
+        <div>
+          <h1>Customer Reviews</h1>
+          <span>
+            <p>Read and write reviews</p>
+            <FontAwesomeIcon icon={"chevron-right"} />
+          </span>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-items-center mx-auto max-w-[1200px]">
+          <ReviewCard />
+          <ReviewCard />
+          <ReviewCard />
         </div>
       </div>
 
