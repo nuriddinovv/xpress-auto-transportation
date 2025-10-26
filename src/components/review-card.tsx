@@ -8,14 +8,25 @@ import {
   Stack,
 } from "@mui/material";
 
+import avatarcomm from "/avatarcomm.svg";
+
 export const ReviewCard = () => {
   return (
-    <Card sx={{ maxWidth: 380, borderRadius: 3, boxShadow: 3 }}>
+    <Card
+      sx={{
+        width: "100%",
+        maxWidth: 380,
+        borderRadius: 3,
+        boxShadow: "0px 3px 15px rgba(0,0,0,0.05)",
+      }}
+    >
       <CardHeader
-        avatar={<Avatar src="/avatar.jpg" />}
+        avatar={<Avatar src={avatarcomm} />}
         title={
           <>
-            <Typography fontWeight={600}>Ali Abdulla</Typography>
+            <Typography fontWeight={600} color="text.primary">
+              Ali Abdulla
+            </Typography>
             <Stack direction="row" spacing={1} alignItems="center">
               <Rating value={5} readOnly size="small" />
               <Typography variant="caption" color="text.secondary">

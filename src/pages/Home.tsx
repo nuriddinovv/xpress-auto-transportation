@@ -24,6 +24,8 @@ import UsaMap from "../components/usa-map";
 import BlogsCard from "../components/blogs-card";
 import AutoTransportServices from "../components/auto-transport-services";
 import { ReviewCard } from "../components/review-card";
+import googlereviews from "/googlereviews.svg";
+import { Rating } from "@mui/material";
 
 export default function Home() {
   const stats = [
@@ -229,7 +231,7 @@ export default function Home() {
         <CallBackForm />
       </div>
       {/* Partners section */}
-      <div className="container">
+      <div className="container mt-11">
         <h1 className="text-2xl md:text-[32px] mt-4 font-bold">Partners</h1>
 
         <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
@@ -247,18 +249,54 @@ export default function Home() {
         </div>
       </div>
       {/* customer review */}
-      <div>
-        <div>
-          <h1>Customer Reviews</h1>
-          <span>
-            <p>Read and write reviews</p>
-            <FontAwesomeIcon icon={"chevron-right"} />
-          </span>
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-items-center mx-auto max-w-[1200px]">
-          <ReviewCard />
-          <ReviewCard />
-          <ReviewCard />
+
+      <div className="bg-white w-full py-12">
+        <div className="container mx-auto max-w-[1170px] px-4">
+          <div className="flex flex-col md:flex-row md:items-start md:justify-between border-b border-[#E1E6EC] pb-4">
+            <h1 className="text-2xl md:text-[32px] font-bold text-[#1A1F24] uppercase">
+              Customer Reviews
+            </h1>
+
+            <button className="mt-4 md:mt-0 flex items-center gap-2 border border-[#E1E6EC] rounded-xl px-6 py-2 cursor-pointer text-[#1A1F24] hover:bg-gray-50 transition">
+              <span className="text-sm font-medium">
+                Read and write reviews
+              </span>
+              <FontAwesomeIcon icon={"chevron-right"} />
+            </button>
+          </div>
+
+          <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 pt-4">
+            <div className="flex flex-col sm:flex-row sm:items-center flex-wrap gap-3">
+              <div className="flex items-center flex-wrap gap-3">
+                <img
+                  src={googlereviews}
+                  width={200}
+                  alt="Google Reviews"
+                  className="h-[32px] w-auto"
+                />
+                <div className="flex items-center">
+                  <p className="text-2xl text-[#363D45] font-semibold mr-3">
+                    4.9
+                  </p>
+                  <Rating value={5} readOnly size="large" />
+                </div>
+                <div className="flex items-center flex-wrap text-sm text-[#4B5563]">
+                  <p>Based on&nbsp;</p>
+                  <p className="text-[#BB2A2A] underline cursor-pointer">
+                    159 reviews
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="text-[#363D45] font-normal text-base">
+              Helping each other make better choices
+            </div>
+          </div>
+          <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
+            <ReviewCard />
+            <ReviewCard />
+            <ReviewCard />
+          </div>
         </div>
       </div>
 
