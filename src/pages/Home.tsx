@@ -27,6 +27,7 @@ import { ReviewCard } from "../components/review-card";
 import googlereviews from "/googlereviews.svg";
 import { Rating } from "@mui/material";
 import { WhyChooseAccordion } from "../components/whychooseacordion";
+import { RoutesTable } from "../components/routes-table";
 
 export default function Home() {
   const stats = [
@@ -233,8 +234,15 @@ export default function Home() {
           ))}
         </div>
       </div>
+      {/* table section */}
+      <div className="my-8">
+        <h1 className="text-center text-mainDark font-bold text-2xl md:text-[32px] my-8">
+          OUR AUTO TRANSPORT SERVICES
+        </h1>
+        <RoutesTable />
+      </div>
       {/* CallBack form */}
-      <div className="container">
+      <div className="container mt-28">
         <CallBackForm />
       </div>
       {/* Partners section */}
