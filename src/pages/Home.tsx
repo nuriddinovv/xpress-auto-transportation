@@ -26,6 +26,7 @@ import AutoTransportServices from "../components/auto-transport-services";
 import { ReviewCard } from "../components/review-card";
 import googlereviews from "/googlereviews.svg";
 import { Rating } from "@mui/material";
+import { WhyChooseAccordion } from "../components/whychooseacordion";
 
 export default function Home() {
   const stats = [
@@ -163,10 +164,17 @@ export default function Home() {
           ))}
         </div>
       </div>
-      {/* section 4 */}
+      {/* section4 */}
+      <div>
+        <h1 className="text-center text-mainDark font-bold text-2xl md:text-[32px]">
+          WHY CHOOSE XPRESS AUTO TRANSPORTATION?
+        </h1>
+        <WhyChooseAccordion />
+      </div>
+      {/* section 5 */}
       <div className="py-4 md:py-12">
         <p className="text-center text-mainDark font-bold text-2xl md:text-[32px]">
-          What Makes Us Stand Out?
+          WHAT MAKES US STAND OUT?
         </p>
         <Marquee
           speed={30}
@@ -198,7 +206,6 @@ export default function Home() {
           <ServiceHighlightsCard />
         </Marquee>
       </div>
-
       {/* MAP section */}
       <div className="container py-4 md:py-12 md:min-h-fit">
         <p className="text-center text-mainDark font-bold text-2xl md:text-[32px]">
@@ -249,7 +256,6 @@ export default function Home() {
         </div>
       </div>
       {/* customer review */}
-
       <div className="bg-white w-full py-12">
         <div className="container mx-auto max-w-[1170px] px-4">
           <div className="flex flex-col md:flex-row md:items-start md:justify-between border-b border-[#E1E6EC] pb-4">
@@ -299,7 +305,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
       {/* Blogs section */}
       <div className=" container py-4 md:py-12">
         <p className="text-center text-mainDark font-bold text-2xl md:text-[32px] mb-5 md:mb-7">
@@ -311,7 +316,6 @@ export default function Home() {
           ))}
         </div>
       </div>
-
       {/* Accordion section */}
       <div className="py-4 md:py-12 container">
         <h1 className="font-bold text-2xl mb-10 md:text-[32px] text-mainDark text-center">
