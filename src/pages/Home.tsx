@@ -228,10 +228,10 @@ export default function Home() {
         <CallBackForm />
       </div>
       {/* Partners section */}
-      <div className="container mx-auto px-4">
-        <h1 className="text-2xl md:text-[32px] mt-4 font-bold text-center">Partners</h1>
+      <div className="container">
+        <h1 className="text-2xl md:text-[32px] mt-4 font-bold">Partners</h1>
 
-        <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 ">
+        <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {partners.map((partner) => (
             <div
               key={partner.id}
