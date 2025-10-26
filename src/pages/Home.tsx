@@ -229,12 +229,17 @@ export default function Home() {
         <CallBackForm />
       </div>
       {/* Partners section */}
+<<<<<<< HEAD
       <div className="container mx-auto px-4">
         <h1 className="text-2xl md:text-[32px] mt-4 font-bold text-center">
           Partners
         </h1>
+=======
+      <div className="container">
+        <h1 className="text-2xl md:text-[32px] mt-4 font-bold">Partners</h1>
+>>>>>>> 912cada426192ea8d0f55a739d2604b7b0e32d4b
 
-        <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 ">
+        <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {partners.map((partner) => (
             <div key={partner.id} className="w-full px-4 mb-6">
               <div className="w-full h-full transition-all duration-300 bg-white border border-[#F1F1F5] hover:shadow-lg rounded-xl p-10 flex items-center justify-center">
