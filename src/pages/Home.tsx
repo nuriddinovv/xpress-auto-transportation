@@ -10,6 +10,8 @@ import centraldispatch from "/centraldispatch.svg";
 import dialpad from "/dialpad.svg";
 import fmcsa from "/fmcsa.svg";
 import transportreviews from "/transportreviews.svg";
+import roadmap from "/roadmap.svg";
+import carshippingquote from "/carshippingquote.svg";
 import {
   faTruckFast,
   faFaceSmile,
@@ -28,6 +30,7 @@ import googlereviews from "/googlereviews.svg";
 import { Rating } from "@mui/material";
 import { WhyChooseAccordion } from "../components/whychooseacordion";
 import { RoutesTable } from "../components/routes-table";
+import { SimpleSteps } from "../components/simple-steps";
 
 export default function Home() {
   const stats = [
@@ -245,6 +248,22 @@ export default function Home() {
       <div className="container mt-28">
         <CallBackForm />
       </div>
+      {/* carshippingquote img */}
+      <div className="my-20">
+        <img src={carshippingquote} width="100%" alt="404" />
+      </div>
+
+      {/* simple steps section */}
+      <div>
+        <h1 className="text-center text-mainDark font-bold text-2xl md:text-[32px] my-8 mt-20">
+          SIMPLE STEPS
+        </h1>
+        <div className="justify-center flex">
+          <img src={roadmap} width="70%" alt="404" />
+        </div>
+        <SimpleSteps />
+      </div>
+
       {/* Partners section */}
       <div className="container mt-11">
         <h1 className="text-2xl md:text-[32px] mt-4 font-bold">Partners</h1>
