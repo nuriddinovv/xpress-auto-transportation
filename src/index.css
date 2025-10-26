@@ -6,11 +6,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Exo 2", sans-serif;
-}
-
-body {
-  @apply font-main;
+  font-family: "Exo", sans-serif;
 }
 
 @layer base {
