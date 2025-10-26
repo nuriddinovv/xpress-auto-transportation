@@ -28,7 +28,7 @@ export const ReviewCard = () => {
               Ali Abdulla
             </Typography>
             <Stack direction="row" spacing={1} alignItems="center">
-              <Rating value={5} readOnly size="small" />
+              <Rating value={3} readOnly size="small" />
               <Typography variant="caption" color="text.secondary">
                 25 weeks ago
               </Typography>
