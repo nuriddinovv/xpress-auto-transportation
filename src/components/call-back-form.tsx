@@ -7,45 +7,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const CallBackForm = () => {
   return (
-<<<<<<< HEAD
     <div className="container grid grid-cols-1 md:grid-cols-2 rounded-2xl py-5 my-3 gap-5 bg-[linear-gradient(90deg,rgba(247,250,252,1),rgba(245,229,236,0.41),rgba(205,223,245,0.42))]">
       <div className="flex flex-col gap-6 justify-between w-full">
-=======
-    <>
-      <div className="container grid grid-cols-1 md:grid-cols-2 rounded-2xl py-5 my-3 gap-5 bg-[linear-gradient(90deg,rgba(247,250,252,1),rgba(245,229,236,0.41),rgba(205,223,245,0.42))]">
-        <div className="flex flex-col gap-6 justify-between w-full">
-          <div>
-            <h1 className="font-bold text-2xl md:text-3xl leading-[130%] text-mainDark text-center md:text-left">
-              READY TO TRANSPORT YOUR VEHICLE?
-            </h1>
-            <p className="font-normal text-base text-[#5C6670] text-center md:text-left">
-              Our Professional Team is Ready to Assist You!
-            </p>
-          </div>
-          <div className="flex items-center justify-between md:block ">
-            <a
-              href="https://maps.app.goo.gl/rN87ruYpL5JQUP3E8"
-              className="font-bold text-base md:text-xl text-second flex items-center gap-2"
-            >
-              <FontAwesomeIcon icon={faLocationDot} /> 3073 Allendale Dr Indian
-              Land, SC 29707
-            </a>
-            <a
-              href="mailto:info@xpresstransportation.org"
-              className="font-bold text-base md:text-xl text-second flex items-center gap-2"
-            >
-              <FontAwesomeIcon icon={faEnvelope} />
-              info@xpresstransportation.org
-            </a>
-            <a
-              href="tel:+19295665040"
-              className="font-bold text-base md:text-xl text-second flex items-center gap-2"
-            >
-              <FontAwesomeIcon icon={faPhone} /> +1 (929) 565-040
-            </a>
-          </div>
-        </div>
->>>>>>> 4ce9332b054da62c71dce8cea08fa38658cd792c
         <div>
           <h1 className="font-bold text-2xl md:text-3xl leading-[130%] text-mainDark text-center md:text-left">
             READY TO TRANSPORT YOUR VEHICLE?

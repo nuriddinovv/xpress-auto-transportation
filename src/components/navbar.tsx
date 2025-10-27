@@ -1,19 +1,10 @@
 import { NavLink } from "react-router-dom";
 import fullIcon from "/fullIcon.svg";
 import calculator from "/calculator.svg";
-<<<<<<< HEAD
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 export const Navbar = () => {
-=======
-import { useDisclosure } from "@mantine/hooks";
-import { Drawer } from "@mantine/core";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-export default function Navbar() {
-  const [opened, { open, close }] = useDisclosure(false);
-
->>>>>>> 4ce9332b054da62c71dce8cea08fa38658cd792c
   return (
     <>
       <div className="fixed w-full top-0 left-0 backdrop-blur-lg bg-white/30 py-6 z-50">

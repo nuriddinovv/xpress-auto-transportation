@@ -32,7 +32,7 @@ import { WhyChooseAccordion } from "../components/why-choose-acordion";
 import { RoutesTable } from "../components/routes-table";
 import { SimpleSteps } from "../components/simple-steps";
 
-export default function Home() {
+export const Home = () => {
   const stats = [
     { icon: faTruckFast, title: "Cars transported", count: 1500 },
     { icon: faFaceSmile, title: "Satisfied clients", count: 1200 },
@@ -404,4 +404,4 @@ export default function Home() {
       </div>
     </>
   );
-}
+};

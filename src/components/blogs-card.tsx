@@ -2,19 +2,11 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { NavLink } from "react-router-dom";
 
-<<<<<<< HEAD
 export const BlogsCard = () => {
   return (
     <NavLink
       to={`/blog/1`}
       className="group w-full min-h-[345px] rounded-xl overflow-hidden hover:shadow-lg transition-shadow duration-300 bg-white"
-=======
-export default function BlogsCard() {
-  return (
-    <NavLink
-      to={`/blog/1`}
-      className="group w-full min-h-[345px] rounded-xl overflow-hidden hover:shadow-lg border  transition-shadow duration-300 bg-white"
->>>>>>> 4ce9332b054da62c71dce8cea08fa38658cd792c
     >
       <img src="/truckAndSafe.svg" alt="truck" className="w-full rounded-xl" />
       <div className="p-4">
@@ -38,8 +30,4 @@ export default function BlogsCard() {
       </div>
     </NavLink>
   );
-<<<<<<< HEAD
 };
-=======
-}
->>>>>>> 4ce9332b054da62c71dce8cea08fa38658cd792c
