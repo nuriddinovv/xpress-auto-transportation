@@ -3,6 +3,7 @@ import fullIcon from "/fullIcon.svg";
 import calculator from "/calculator.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { Drawer } from "@mantine/core";
 
 export const Navbar = () => {
   return (
@@ -10,7 +11,7 @@ export const Navbar = () => {
       <div className="fixed w-full top-0 left-0 backdrop-blur-lg bg-white/30 py-6 z-50">
         <div className="container flex items-center justify-between">
           <div className="flex items-center gap-4">
-            <button className="block md:hidden" onClick={open}>
+            <button className="block md:hidden" onClick={() => open}>
               <FontAwesomeIcon icon={faBars} />
             </button>
             <NavLink to={"/"}>
@@ -45,7 +46,7 @@ export const Navbar = () => {
       <div className="h-[88px]"></div>
 
       {/* Drawer menu for mobile */}
-      <Drawer opened={opened} onClose={close} size="xs" padding="xl">
+      <Drawer opened={open} onClose={close} size="xs" padding="xl">
         <div className="gap-6 flex flex-col">
           <NavLink
             className="font-[600] text-mainDark"

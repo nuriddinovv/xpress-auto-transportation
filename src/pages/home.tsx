@@ -21,7 +21,7 @@ import {
 import { ServiceHighlightsCard } from "../components/service-highlights-card";
 import { CallBackForm } from "../components/call-back-form";
 import Marquee from "react-fast-marquee";
-import { AccordionComponent } from "../components/accordion/Accordion";
+import { AccordionComponent } from "../components/accordion/accordion";
 import { UsaMap } from "../components/usa-map";
 import { BlogsCard } from "../components/blogs-card";
 import { AutoTransportServices } from "../components/auto-transport-services";
