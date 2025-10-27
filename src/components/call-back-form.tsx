@@ -1,4 +1,8 @@
-import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import {
+  faEnvelope,
+  faLocationDot,
+  faPhone,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function CallBackForm() {
@@ -15,10 +19,23 @@ export default function CallBackForm() {
             </p>
           </div>
           <div className="flex items-center justify-between md:block ">
-            <p className="font-semibold text-base text-[#244567]">Contact Us</p>
+            <a
+              href="https://maps.app.goo.gl/rN87ruYpL5JQUP3E8"
+              className="font-bold text-base md:text-xl text-second flex items-center gap-2"
+            >
+              <FontAwesomeIcon icon={faLocationDot} /> 3073 Allendale Dr Indian
+              Land, SC 29707
+            </a>
+            <a
+              href="mailto:info@xpresstransportation.org"
+              className="font-bold text-base md:text-xl text-second flex items-center gap-2"
+            >
+              <FontAwesomeIcon icon={faEnvelope} />
+              info@xpresstransportation.org
+            </a>
             <a
               href="tel:+19295665040"
-              className="font-bold text-base md:text-xl text-[#212525] flex items-center gap-2"
+              className="font-bold text-base md:text-xl text-second flex items-center gap-2"
             >
               <FontAwesomeIcon icon={faPhone} /> +1 (929) 565-040
             </a>
