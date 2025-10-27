@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { QuoteCalculator } from "../components/quote-calculator";
 import { StatsComponent } from "../components/stats-component";
 import cobaltKey from "/cobaltKey.svg";
-import homeAboutSect from "/homeAboutSect.svg";
+import homeAboutSect from "/home-about-sect.svg";
 import homeBg from "/homeBg.svg";
 import truckAndSafe from "/truckAndSafe.svg";
 import twoHand from "/twoHand.svg";
