@@ -10,8 +10,12 @@ import {
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 import { NavLink } from "react-router-dom";
+<<<<<<< HEAD
 
 export const Footer = () => {
+=======
+export default function Footer() {
+>>>>>>> 4ce9332b054da62c71dce8cea08fa38658cd792c
   return (
     <div className="bg-second">
       <div className="container py-4 md:py-12 ">
@@ -19,7 +23,11 @@ export const Footer = () => {
           <div className="md:col-span-2">
             <img
               src="/fullIconWhite.svg"
+<<<<<<< HEAD
               className="w-[250px]"
+=======
+              className="w-[250px] mx-auto md:mx-0"
+>>>>>>> 4ce9332b054da62c71dce8cea08fa38658cd792c
               alt="XPRESS AUTO TRANSPORTATION"
             />
             <div className="py-3 md:py-6 flex flex-col gap-3 text-white">
@@ -75,7 +83,11 @@ export const Footer = () => {
               </a>
             </div>
           </div>
+<<<<<<< HEAD
           <div className="text-white none md:block">
+=======
+          <div className="text-white none hidden md:block">
+>>>>>>> 4ce9332b054da62c71dce8cea08fa38658cd792c
             <p className="font-bold text-lg mb-4">PAGES</p>
             <ul className="list-disc flex flex-col gap-3">
               <li>
@@ -110,7 +122,11 @@ export const Footer = () => {
               </li>
             </ul>
           </div>
+<<<<<<< HEAD
           <div className="text-white none md:block">
+=======
+          <div className="text-white none hidden md:block">
+>>>>>>> 4ce9332b054da62c71dce8cea08fa38658cd792c
             <p className="font-bold text-lg mb-4">Office Hours</p>
             <ul className="list-disc flex flex-col gap-[10px]">
               <li>
@@ -159,4 +175,8 @@ export const Footer = () => {
       </div>
     </div>
   );
+<<<<<<< HEAD
 };
+=======
+}
+>>>>>>> 4ce9332b054da62c71dce8cea08fa38658cd792c
