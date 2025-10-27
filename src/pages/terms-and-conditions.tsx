@@ -1,5 +1,3 @@
-export default function TermsAndConditions() {
-     return (
-          <div>TermsAndConditions</div>
-     )
-}
+export const TermsAndConditions = () => {
+  return <div>TermsAndConditions</div>;
+};

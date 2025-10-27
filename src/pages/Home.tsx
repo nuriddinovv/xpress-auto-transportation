@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import QuoteCalculator from "../components/quote-calculator";
-import StatsComponent from "../components/stats-component";
+import { QuoteCalculator } from "../components/quote-calculator";
+import { StatsComponent } from "../components/stats-component";
 import cobaltKey from "/cobaltKey.svg";
 import homeAboutSect from "/homeAboutSect.svg";
 import homeBg from "/homeBg.svg";
@@ -18,17 +18,17 @@ import {
   faHashtag,
   faStar,
 } from "@fortawesome/free-solid-svg-icons";
-import ServiceHighlightsCard from "../components/service-highlights-card";
-import CallBackForm from "../components/call-back-form";
+import { ServiceHighlightsCard } from "../components/service-highlights-card";
+import { CallBackForm } from "../components/call-back-form";
 import Marquee from "react-fast-marquee";
 import { AccordionComponent } from "../components/accordion/Accordion";
-import UsaMap from "../components/usa-map";
-import BlogsCard from "../components/blogs-card";
-import AutoTransportServices from "../components/auto-transport-services";
+import { UsaMap } from "../components/usa-map";
+import { BlogsCard } from "../components/blogs-card";
+import { AutoTransportServices } from "../components/auto-transport-services";
 import { ReviewCard } from "../components/review-card";
 import googlereviews from "/googlereviews.svg";
 import { Rating } from "@mui/material";
-import { WhyChooseAccordion } from "../components/whychooseacordion";
+import { WhyChooseAccordion } from "../components/why-choose-acordion";
 import { RoutesTable } from "../components/routes-table";
 import { SimpleSteps } from "../components/simple-steps";
 

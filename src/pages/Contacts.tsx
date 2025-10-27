@@ -1,5 +1,3 @@
-export default function Contacts() {
-     return (
-          <div>Contacts</div>
-     )
-}
+export const Contacts = () => {
+  return <div>Contacts</div>;
+};

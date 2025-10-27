@@ -9,7 +9,7 @@ type ServiceHighlightsCard = {
 };
 // { img, icon, header, body }: ServiceHighlightsCard
 
-export default function ServiceHighlightsCard() {
+export const ServiceHighlightsCard = () => {
   return (
     <NavLink to={"/"}>
       <div className="w-[240px] md:w-[380px] rounded-[24px] overflow-hidden border border-mainDark/10 mx-1 md:mx-3">
@@ -32,4 +32,4 @@ export default function ServiceHighlightsCard() {
       </div>
     </NavLink>
   );
-}
+};

@@ -1,5 +1,3 @@
-export default function PrivacyAndPolicy() {
-     return (
-          <div>PrivacyAndPolicy</div>
-     )
-}
+export const PrivacyAndPolicy = () => {
+  return <div>PrivacyAndPolicy</div>;
+};

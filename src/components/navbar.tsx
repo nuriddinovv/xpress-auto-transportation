@@ -1,7 +1,8 @@
 import { NavLink } from "react-router-dom";
 import fullIcon from "/fullIcon.svg";
 import calculator from "/calculator.svg";
-export default function Navbar() {
+
+export const Navbar = () => {
   return (
     <>
       <div className="fixed w-full top-0 left-0 backdrop-blur-lg bg-white/30 py-6 z-50">
@@ -33,4 +34,4 @@ export default function Navbar() {
       <div className="h-[88px]"></div>
     </>
   );
-}
+};

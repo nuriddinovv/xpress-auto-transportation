@@ -1,8 +1,8 @@
-import Navbar from "../components/navbar";
+import { Navbar } from "../components/navbar";
 import { Outlet } from "react-router-dom";
-import Footer from "../components/footer";
+import { Footer } from "../components/footer";
 
-export default function MainLayout() {
+export const MainLayout = () => {
   return (
     <>
       <Navbar />
@@ -10,4 +10,4 @@ export default function MainLayout() {
       <Footer />
     </>
   );
-}
+};

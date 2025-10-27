@@ -1,5 +1,3 @@
-export default function Calculator() {
-     return (
-          <div>Calculator</div>
-     )
-}
+export const Calculator = () => {
+  return <div>Calculator</div>;
+};

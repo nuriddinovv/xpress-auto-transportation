@@ -1,5 +1,3 @@
-export default function BlogID() {
-     return (
-          <div>BlogID</div>
-     )
-}
+export const BlogID = () => {
+  return <div>BlogID</div>;
+};
