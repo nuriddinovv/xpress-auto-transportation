@@ -11,7 +11,7 @@ import dialpad from "/dialpad.svg";
 import fmcsa from "/fmcsa.svg";
 import transportreviews from "/transportreviews.svg";
 import roadmap from "/roadmap.svg";
-import carshippingquote from "/carshippingquote.svg";
+import truck from "/truck.svg";
 import {
   faTruckFast,
   faFaceSmile,
@@ -163,7 +163,7 @@ export default function Home() {
               headerTitle={item.title}
               headerIcon={
                 <FontAwesomeIcon className="text-second" icon={item.icon} />
-              } // <-- IconDefinition berildi
+              }
             />
           ))}
         </div>
@@ -249,8 +249,58 @@ export default function Home() {
         <CallBackForm />
       </div>
       {/* carshippingquote img */}
-      <div className="my-20">
-        <img src={carshippingquote} width="100%" alt="404" />
+      <div className="my-8">
+        <div
+          className="py-14"
+          style={{
+            backgroundImage: `linear-gradient(180deg, rgba(25, 26, 29, 0.3) 0%, rgba(25, 26, 29, 0.9) 70%), url(${truck})`,
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center center",
+            width: "100%",
+          }}
+        >
+          <div className="container">
+            <p className="font-bold text-2xl md:text-[32px] pb-4 text-white ">
+              Car shipping quote
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 ">
+              <div className="flex flex-col gap-2">
+                <div className="flex gap-2 items-center">
+                  <div className="bg-main w-2 h-2 rounded-full"></div>
+                  <p className="text-white text-base">
+                    Get your quote fast and simple
+                  </p>
+                </div>
+                <div className="flex gap-2 items-center">
+                  <div className="bg-main w-2 h-2 rounded-full"></div>
+                  <p className="text-white text-base">
+                    High accuracy in price estimation
+                  </p>
+                </div>
+              </div>
+              <div className="flex flex-col gap-2 py-2">
+                <div className="flex gap-2 items-center">
+                  <div className="bg-main w-2 h-2 rounded-full"></div>
+                  <p className="text-white text-base">
+                    Instant car shipping calculator
+                  </p>
+                </div>
+                <div className="flex gap-2 items-center">
+                  <div className="bg-main w-2 h-2 rounded-full"></div>
+                  <p className="text-white text-base">
+                    Check delivery time based on distance
+                  </p>
+                </div>
+              </div>
+              <div className="px-2 py-2">
+                <button className="bg-main w-full px-6 py-3 rounded-lg text-white font-semibold">
+                  Car shipping calculator
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* simple steps section */}
