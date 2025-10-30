@@ -32,13 +32,13 @@ export const Navbar = () => {
           {/* Desktop menu */}
           <div className="gap-12 hidden md:flex">
             <NavLink className="font-[600] text-mainDark" to={"/about"}>
-              About Us
+              <h3>About Us</h3>
             </NavLink>
             <NavLink className="font-[600] text-mainDark" to={"/blog"}>
-              Blog
+              <h3>Blog</h3>
             </NavLink>
             <NavLink className="font-[600] text-mainDark" to={"/contacts"}>
-              Contacts
+              <h3>Contacts</h3>
             </NavLink>
           </div>
 
@@ -66,7 +66,7 @@ export const Navbar = () => {
             to={"/"}
             onClick={closeDrawer}
           >
-            Home
+            <h3>Home</h3>
           </NavLink>
 
           <NavLink
@@ -74,7 +74,7 @@ export const Navbar = () => {
             to={"/about"}
             onClick={closeDrawer}
           >
-            About Us
+            <h3>About Us</h3>
           </NavLink>
 
           <NavLink
@@ -82,7 +82,7 @@ export const Navbar = () => {
             to={"/blog"}
             onClick={closeDrawer}
           >
-            Blog
+            <h3>Blog</h3>
           </NavLink>
 
           <NavLink
@@ -90,7 +90,7 @@ export const Navbar = () => {
             to={"/contacts"}
             onClick={closeDrawer}
           >
-            Contacts
+            <h3>Contacts</h3>
           </NavLink>
 
           <button

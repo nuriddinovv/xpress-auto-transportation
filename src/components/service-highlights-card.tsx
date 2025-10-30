@@ -21,13 +21,13 @@ export const ServiceHighlightsCard = () => {
           />
         </div>
         <div className="p-3 md:p-5">
-          <p className="font-bold text-mainDark text-xl mb-3">
+          <h1 className="font-bold text-mainDark text-xl mb-3">
             Exceptional Reliability
-          </p>
-          <p className="text-[#191A1D99] text-sm">
+          </h1>
+          <h2 className="text-[#191A1D99] text-sm">
             Choosing the right auto transport company is crucial for ensuring a
             smooth and stress-free car{" "}
-          </p>
+          </h2>
         </div>
       </div>
     </NavLink>

@@ -29,7 +29,7 @@ export const StatsComponent = ({
     >
       <div className="flex gap-3 mb-3 items-center">
         {headerIcon}
-        <p className="text-xl font-[500] text-mainDark">{headerTitle}</p>
+        <h1 className="text-xl font-[500] text-mainDark">{headerTitle}</h1>
       </div>
 
       {inView ? (

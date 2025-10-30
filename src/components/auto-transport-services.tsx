@@ -9,9 +9,9 @@ export const AutoTransportServices = () => {
           <div className="flex items-center justify-center bg-second rounded-full w-fit p-3">
             <FontAwesomeIcon icon={faTruck} className="text-white w-6 h-6" />
           </div>
-          <p className="text-lg md:text-xl font-semibold">
+          <h1 className="text-lg md:text-xl font-semibold">
             Open Auto Transport
-          </p>
+          </h1>
         </div>
         <p className="text-lightGray text-sm">
           Our most popular and cost-effective option, open auto transport,

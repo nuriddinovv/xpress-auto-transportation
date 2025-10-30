@@ -61,17 +61,17 @@ export const Home = () => {
       >
         <div className="container py-[32px] md:py-[68px]">
           <div className="gap-3 mb-8 md:px-12">
-            <p className="font-bold md:text-[2.5rem] text-[1.5rem] max-w-[685px] mx-auto text-center text-white">
+            <h1 className="font-bold md:text-[2.5rem] text-[1.5rem] max-w-[685px] mx-auto text-center text-white">
               Reliable Door-to-Door Auto Transport & Car Shipping Services
-            </p>
-            <p className="font-[500] md:text-lg text-wrap text-white/65 text-center">
+            </h1>
+            <h2 className="font-[500] md:text-lg text-wrap text-white/65 text-center">
               <span className="text-main">Xpress Auto Transportation</span>:
               Your reliable solution for secure and efficient vehicle shipping
               nationwide. We offer hassle-free transportation services for cars,
               motorcycles, and SUVs, ensuring timely delivery and peace of mind.
               Contact us now to experience our top-quality service and
               competitive pricing.
-            </p>
+            </h2>
           </div>
 
           <div className="w-full p-4 rounded-[28px] backdrop-blur-[200px] bg-white/20 border-2 border-white/10 gap-6 flex">
@@ -91,7 +91,7 @@ export const Home = () => {
             className="col-span-12 bg-right-top  lg:col-span-8 rounded-2xl py-5 px-6 min-h-[215px] grid md:grid-cols-2"
           >
             <div>
-              <p className="mb-2 font-bold text-white text-2xl">About Us</p>
+              <h2 className="mb-2 font-bold text-white text-2xl">About Us</h2>
               <p className="text-sm text-white">
                 At Xpress Auto Transportation, we are dedicated to providing
                 exceptional vehicle shipping services tailored to your needs.
@@ -108,9 +108,9 @@ export const Home = () => {
             }}
             className="col-span-12 lg:col-span-4 lg:row-span-2 bg-[#090F14] rounded-2xl py-5 px-6"
           >
-            <p className="mb-2 font-bold text-white text-2xl">
+            <h2 className="mb-2 font-bold text-white text-2xl">
               Safe & Reliable Delivery
-            </p>
+            </h2>
             <p className="text-sm text-white">
               Our skilled professionals ensure the safe and timely delivery of
               your vehicles, treating each shipment with the utmost care
@@ -125,9 +125,9 @@ export const Home = () => {
             }}
             className="col-span-12 sm:col-span-6 lg:col-span-4 rounded-2xl py-5 px-6 min-h-[215px] bg-[#090F14]"
           >
-            <p className="mb-2 font-bold text-white text-2xl">
+            <h2 className="mb-2 font-bold text-white text-2xl">
               Hassle-Free Experience
-            </p>
+            </h2>
             <p className="text-sm text-white">
               Choose Xpress Auto Transportation for a reliable and stress-free
               shipping journey
@@ -143,9 +143,9 @@ export const Home = () => {
             }}
             className="col-span-12 sm:col-span-6 lg:col-span-4 rounded-2xl py-5 px-6 min-h-[215px] bg-[#090F14]"
           >
-            <p className="mb-2 font-bold text-white text-2xl">
+            <h2 className="mb-2 font-bold text-white text-2xl">
               Customer-Centric Service
-            </p>
+            </h2>
             <p className="text-sm text-white w-3/4">
               We take pride in our transparent and customer-focused approach,
               offering competitive pricing and open communication.
@@ -177,9 +177,9 @@ export const Home = () => {
       </div>
       {/* section 5 */}
       <div className="py-4 md:py-12">
-        <p className="text-center text-mainDark font-bold text-2xl md:text-[32px]">
+        <h1 className="text-center text-mainDark font-bold text-2xl md:text-[32px]">
           WHAT MAKES US STAND OUT?
-        </p>
+        </h1>
         <Marquee
           speed={30}
           pauseOnHover
@@ -212,25 +212,25 @@ export const Home = () => {
       </div>
       {/* MAP section */}
       <div className="container py-4 md:py-12 md:min-h-fit">
-        <p className="text-center text-mainDark font-bold text-2xl md:text-[32px]">
+        <h1 className="text-center text-mainDark font-bold text-2xl md:text-[32px]">
           CHOOSE THE STATE
-        </p>
-        <p className="text-center text-base text-lightGray">
+        </h1>
+        <h2 className="text-center text-base text-lightGray">
           Choose the state to see which services is available{" "}
-        </p>
+        </h2>
         <UsaMap />
       </div>
       <div className="container py-4 md:py-12">
-        <p className="font-bold text-2xl md:text-[32px] uppercase">
+        <h1 className="font-bold text-2xl md:text-[32px] uppercase">
           Our Auto Transport Services
-        </p>
-        <p className="text-base text-lightGray mb-8 mt-2 md:w-[80%]">
+        </h1>
+        <h2 className="text-base text-lightGray mb-8 mt-2 md:w-[80%]">
           At Xpress Auto Transportation, we offer a range of services tailored
           to meet your specific needs. Whether you need to transport a family
           car, luxury vehicle, or an entire fleet, we provide reliable car
           shipping solutions that ensure your vehicle arrives safely and on
           time.
-        </p>
+        </h2>
         <div className=" flex flex-col gap-7">
           {[1, 2, 3, 4].map((item) => (
             <AutoTransportServices key={item} />
@@ -261,36 +261,36 @@ export const Home = () => {
           }}
         >
           <div className="container">
-            <p className="font-bold text-2xl md:text-[32px] pb-4 text-white ">
+            <h1 className="font-bold text-2xl md:text-[32px] pb-4 text-white ">
               Car shipping quote
-            </p>
+            </h1>
             <div className="grid grid-cols-1 md:grid-cols-3 ">
               <div className="flex flex-col gap-2">
                 <div className="flex gap-2 items-center">
                   <div className="bg-main w-2 h-2 rounded-full"></div>
-                  <p className="text-white text-base">
+                  <h2 className="text-white text-base">
                     Get your quote fast and simple
-                  </p>
+                  </h2>
                 </div>
                 <div className="flex gap-2 items-center">
                   <div className="bg-main w-2 h-2 rounded-full"></div>
-                  <p className="text-white text-base">
+                  <h2 className="text-white text-base">
                     High accuracy in price estimation
-                  </p>
+                  </h2>
                 </div>
               </div>
               <div className="flex flex-col gap-2 py-2">
                 <div className="flex gap-2 items-center">
                   <div className="bg-main w-2 h-2 rounded-full"></div>
-                  <p className="text-white text-base">
+                  <h2 className="text-white text-base">
                     Instant car shipping calculator
-                  </p>
+                  </h2>
                 </div>
                 <div className="flex gap-2 items-center">
                   <div className="bg-main w-2 h-2 rounded-full"></div>
-                  <p className="text-white text-base">
+                  <h2 className="text-white text-base">
                     Check delivery time based on distance
-                  </p>
+                  </h2>
                 </div>
               </div>
               <div className="px-2 py-2">
@@ -309,7 +309,7 @@ export const Home = () => {
           SIMPLE STEPS
         </h1>
         <div className="justify-center flex">
-          <img src={roadmap} width="70%" alt="404" />
+          <img src={roadmap} width="70%" alt="Simple Steps" />
         </div>
         <SimpleSteps />
       </div>
@@ -384,9 +384,9 @@ export const Home = () => {
       </div>
       {/* Blogs section */}
       <div className=" container py-4 md:py-12">
-        <p className="text-center text-mainDark font-bold text-2xl md:text-[32px] mb-5 md:mb-7">
+        <h1 className="text-center text-mainDark font-bold text-2xl md:text-[32px] mb-5 md:mb-7">
           BLOG POSTS
-        </p>
+        </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
           {[1, 2, 3, 4].map((item) => (
             <BlogsCard key={item} />

@@ -14,9 +14,9 @@ export const CallBackForm = () => {
             <h1 className="font-bold text-2xl md:text-3xl leading-[130%] text-mainDark text-center md:text-left">
               READY TO TRANSPORT YOUR VEHICLE?
             </h1>
-            <p className="font-normal text-base text-[#5C6670] text-center md:text-left">
+            <h3 className="font-normal text-base text-[#5C6670] text-center md:text-left">
               Our Professional Team is Ready to Assist You!
-            </p>
+            </h3>
           </div>
           <div className="flex items-center justify-between md:block ">
             <a
@@ -73,7 +73,11 @@ export const CallBackForm = () => {
               Submit
             </button>
             <div className="flex gap-2">
-              <input type="checkbox" name="privacy-policy" />
+              <input
+                type="checkbox"
+                id="privacy-policy"
+                name="privacy-policy"
+              />
               <label
                 typeof="button"
                 htmlFor="privacy-policy"

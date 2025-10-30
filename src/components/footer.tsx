@@ -80,32 +80,32 @@ export const Footer = () => {
             <ul className="list-disc flex flex-col gap-3">
               <li>
                 <NavLink to={"/"} className="font-semibold text-sm">
-                  Main Page
+                  <h1>Main Page</h1>
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to={"/about"} className="font-semibold text-sm">
+                  <h1>About Us</h1>
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to={"/contacts"} className="font-semibold text-sm">
+                  <h1>Contact Us</h1>
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to={"/blog"} className="font-semibold text-sm">
+                  <h1>Blog</h1>
                 </NavLink>
               </li>
               <li>
                 <NavLink to={"/"} className="font-semibold text-sm">
-                  About Us
+                  <h1>Terms&Conditions</h1>
                 </NavLink>
               </li>
               <li>
                 <NavLink to={"/"} className="font-semibold text-sm">
-                  Contact Us
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to={"/"} className="font-semibold text-sm">
-                  Blog
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to={"/"} className="font-semibold text-sm">
-                  Terms&Conditions
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to={"/"} className="font-semibold text-sm">
-                  Privacy&Policy
+                  <h1>Privacy&Policy</h1>
                 </NavLink>
               </li>
             </ul>
