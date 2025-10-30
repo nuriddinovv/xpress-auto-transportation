@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export const CallBackForm = () => {
   return (
     <>
-      <div className="container grid grid-cols-1 md:grid-cols-2 rounded-2xl py-5 my-3 gap-5 bg-[linear-gradient(90deg,rgba(247,250,252,1),rgba(245,229,236,0.41),rgba(205,223,245,0.42))]">
+      <div className="container grid grid-cols-1 md:grid-cols-2 rounded-2xl py-5 my-3 gap-5 bg-[linear-gradient(90deg,rgba(247,250,252,1),rgba(245,229,236,0.41),rgba(205,223,245,0.42))] overflow-hidden">
         <div className="flex flex-col gap-6 justify-between w-full">
           <div>
             <h1 className="font-bold text-2xl md:text-3xl leading-[130%] text-mainDark text-center md:text-left">
@@ -18,7 +18,7 @@ export const CallBackForm = () => {
               Our Professional Team is Ready to Assist You!
             </h3>
           </div>
-          <div className="flex items-center justify-between md:block ">
+          <div className="flex flex-col items-center justify-between md:block ">
             <a
               href="https://maps.app.goo.gl/rN87ruYpL5JQUP3E8"
               className="font-bold text-base md:text-xl text-second flex items-center gap-2"

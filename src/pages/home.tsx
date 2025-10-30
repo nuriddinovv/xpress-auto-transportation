@@ -169,7 +169,7 @@ export const Home = () => {
         </div>
       </div>
       {/* section4 */}
-      <div className="min-h-[400px]">
+      <div className="min-h-[400px] container">
         <h1 className="text-center text-mainDark font-bold text-2xl md:text-[32px]">
           WHY CHOOSE XPRESS AUTO TRANSPORTATION?
         </h1>
